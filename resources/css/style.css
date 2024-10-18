@@ -32,6 +32,11 @@ body {
   display: block;
 }
 
+img {
+  height: auto; 
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
@@ -145,12 +150,15 @@ header .mobile {
   background-size: cover;
 }
 
+
+
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
   margin-top: 170px;
+  margin-bottom: 170px;
   margin-left: 100px;
 }
 
@@ -171,6 +179,13 @@ header .mobile {
   font-size: 2.25rem;
 }
 
+#sign-up-cta span {
+  margin-top: 12px;
+  color: white;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
 #sign-up-cta span strong {
   font-weight: bold;
 }
@@ -182,6 +197,9 @@ header .mobile {
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
+  color: white;
+  font-size: 50px;
+  line-height: 1.4;
 }
 
 #sign-up-cta .button {
@@ -239,22 +257,25 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
+  justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 46px;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  width: 50%;
+  height: 635px;
+  padding: 32px 32px 40px 32px;
 }
 
 .feature .image-container {
-  width: 90%;
-  height: 65%;
+
   margin: 0 auto;
+  
 }
 
 .feature h2 {
@@ -322,8 +343,10 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
+  margin-top: 80px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -362,14 +385,14 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+  padding: 80px 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
-  font-size: 1.875rem;
+  font-size: 30px;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
@@ -377,6 +400,7 @@ header .mobile {
 
 #quotes-section quote-citation {
   height: 1.875rem;
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -401,6 +425,8 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 footer .content {
